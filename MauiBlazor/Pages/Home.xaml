@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiBlazor.Pages.Home"
+             Title="Home">
+    <VerticalStackLayout>
+        <Label 
+            Text="This is Home"
+            VerticalOptions="Center" 
+            HorizontalOptions="Center" />
+        <TabbedPage x:Name="tbPg" IsEnabled="True" Padding="100" MaximumHeightRequest="200" BackgroundColor="Aqua" Loaded="tbPg_Loaded" Unloaded="tbPg_Unloaded"/>
+        
+        <TableView x:Name="tbVw" Frame="100" BackgroundColor="Azure" Loaded="tbVw_Loaded" Unloaded="tbVw_Unloaded"/>
+
+
+    </VerticalStackLayout>
+</ContentPage>

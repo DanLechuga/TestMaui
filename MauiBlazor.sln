@@ -1,0 +1,62 @@
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 17
+VisualStudioVersion = 17.0.31611.283
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MauiBlazor", "MauiBlazor\MauiBlazor.csproj", "{84449E63-EE16-4BB7-B1CE-12D83E5B93EC}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServicioMaui", "ServicioMaui\ServicioMaui.csproj", "{FEBF5C57-B873-468E-A0C6-73C10D14BE00}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "RepositorioMaui", "RepositorioMaui\RepositorioMaui.csproj", "{EA0D3A40-A5B9-4E4A-BD8B-1BC61C991D57}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Comun", "Comun\Comun.csproj", "{17579E02-57A8-4EB4-B414-CA6373535ECF}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MiddlewareMaui", "MiddlewareMaui\MiddlewareMaui.csproj", "{E3A38114-9842-409E-A85E-47CA9CED70DB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PruebasMaui", "PruebasMaui\PruebasMaui.csproj", "{BBC9E9E2-D211-4E2F-8EA0-7B852BA1E51F}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "GatewayMaui", "GatewayMaui\GatewayMaui.csproj", "{F157378C-8ABC-4E48-BADE-D60A684F199F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{84449E63-EE16-4BB7-B1CE-12D83E5B93EC}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{84449E63-EE16-4BB7-B1CE-12D83E5B93EC}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{84449E63-EE16-4BB7-B1CE-12D83E5B93EC}.Debug|Any CPU.Deploy.0 = Debug|Any CPU
+		{84449E63-EE16-4BB7-B1CE-12D83E5B93EC}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{84449E63-EE16-4BB7-B1CE-12D83E5B93EC}.Release|Any CPU.Build.0 = Release|Any CPU
+		{84449E63-EE16-4BB7-B1CE-12D83E5B93EC}.Release|Any CPU.Deploy.0 = Release|Any CPU
+		{FEBF5C57-B873-468E-A0C6-73C10D14BE00}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FEBF5C57-B873-468E-A0C6-73C10D14BE00}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FEBF5C57-B873-468E-A0C6-73C10D14BE00}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FEBF5C57-B873-468E-A0C6-73C10D14BE00}.Release|Any CPU.Build.0 = Release|Any CPU
+		{EA0D3A40-A5B9-4E4A-BD8B-1BC61C991D57}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{EA0D3A40-A5B9-4E4A-BD8B-1BC61C991D57}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{EA0D3A40-A5B9-4E4A-BD8B-1BC61C991D57}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{EA0D3A40-A5B9-4E4A-BD8B-1BC61C991D57}.Release|Any CPU.Build.0 = Release|Any CPU
+		{17579E02-57A8-4EB4-B414-CA6373535ECF}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{17579E02-57A8-4EB4-B414-CA6373535ECF}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{17579E02-57A8-4EB4-B414-CA6373535ECF}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{17579E02-57A8-4EB4-B414-CA6373535ECF}.Release|Any CPU.Build.0 = Release|Any CPU
+		{E3A38114-9842-409E-A85E-47CA9CED70DB}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E3A38114-9842-409E-A85E-47CA9CED70DB}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E3A38114-9842-409E-A85E-47CA9CED70DB}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E3A38114-9842-409E-A85E-47CA9CED70DB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{BBC9E9E2-D211-4E2F-8EA0-7B852BA1E51F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{BBC9E9E2-D211-4E2F-8EA0-7B852BA1E51F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{BBC9E9E2-D211-4E2F-8EA0-7B852BA1E51F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{BBC9E9E2-D211-4E2F-8EA0-7B852BA1E51F}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F157378C-8ABC-4E48-BADE-D60A684F199F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F157378C-8ABC-4E48-BADE-D60A684F199F}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F157378C-8ABC-4E48-BADE-D60A684F199F}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F157378C-8ABC-4E48-BADE-D60A684F199F}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {61F7FB11-1E47-470C-91E2-47F8143E1572}
+	EndGlobalSection
+EndGlobal

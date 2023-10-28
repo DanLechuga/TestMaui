@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://schemas.microsoft.com/dotnet/2021/maui"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="MauiBlazor.Pages.Login"
+             Title="Login"
+             BackgroundColor="Bisque">
+    <VerticalStackLayout VerticalOptions="CenterAndExpand" HorizontalOptions="Center">
+        <Label x:Name="usernameL" Text="Welcome Usr: ->" FontSize="Medium" TextColor="Black"/>
+        
+
+
+        <Entry x:Name="controlUsername" 
+                Placeholder="Ingresa Usuario"                
+                HeightRequest="30"
+                IsEnabled="True"
+                Keyboard="Email"                              
+                FontSize="Small"
+                FontFamily="OpenSansRegular"
+                TextColor="Black"/>
+        <Label x:Name="passwordL" Text="Password: ->" FontSize="Subtitle" TextColor="Black"/>
+        
+        
+        <Entry  x:Name="controlPassword"
+                Placeholder="Ingresa Contraseña"
+                HeightRequest="30"                 
+                Keyboard="Text"
+                IsPassword="True"
+                FontSize="Small"
+                FontFamily="OpenSansRegular"                              
+                TextColor="Black"/>
+        
+        <Button x:Name="bttnSend"
+                Text="Ingresar"
+                TextColor="Black"
+                BackgroundColor="BurlyWood"
+                BorderColor="Black"
+                Padding="10"
+                Margin="35"
+                Clicked="bttnSend_Clicked"
+                />
+    </VerticalStackLayout>
+</ContentPage>
