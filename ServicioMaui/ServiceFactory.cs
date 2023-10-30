@@ -1,4 +1,5 @@
-﻿using MiddlewareMaui.Contacts;
+﻿using AutoMapper;
+using MiddlewareMaui.Contacts;
 using ServicioMaui.Services;
 
 namespace ServicioMaui
@@ -7,10 +8,14 @@ namespace ServicioMaui
     {
         private IServiceUser serviceUser = null;
         public readonly IUnitOfWork unitOfWork;
-        public ServiceFactory(IUnitOfWork unitOfWork)
+        public readonly IMapper mapper;
+        public ServiceFactory(IUnitOfWork unitOfWork, IMapper mapper)
         {
             this.unitOfWork = unitOfWork;
+            this.mapper= mapper;
         }
-        public IServiceUser ServiceUser => serviceUser ??= new ServiceUser(this,unitOfWork);
+        public IServiceUser ServiceUser => serviceUser ??= new ServiceUser(this,unitOfWork,mapper);
+
+        public IServiceOperations ServiceOperations => throw new NotImplementedException();
     }
 }

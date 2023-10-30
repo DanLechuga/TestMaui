@@ -1,27 +1,19 @@
+using AutoMapper;
 using MiddlewareMaui.Contacts;
-using RepositorioMaui;
-using ServicioMaui;
 namespace MauiBlazor.Pages;
 
 public partial class Login : ContentPage
 {
     
-    IServiceFactory serviceFactory;
-    IUnitOfWork unitOfWork;
-    public Login()
+    IServiceFactory ServiceFactory { get; }
+    IMapper Mapper { get; }
+    public Login(IServiceFactory serviceFactory, IMapper mapper)
 	{
 		InitializeComponent();
-        this.unitOfWork = new UnitOfWork();
-        this.serviceFactory = new ServiceFactory(unitOfWork);        
+        this.ServiceFactory = serviceFactory;
+        this.Mapper= mapper;
 	}
 
-  
-
-   
-
-  
-
-   
 
     private async void bttnSend_Clicked(object sender, EventArgs e)
     {
@@ -29,9 +21,9 @@ public partial class Login : ContentPage
         {
             string username = controlUsername.Text;
             string password = controlPassword.Text;
-            serviceFactory.ServiceUser.ValidateUser(username, password);
+            ServiceFactory.ServiceUser.ValidateUser(username, password);
 
-            await Navigation.PushAsync(new Pages.Home());
+            await Navigation.PushAsync(new Home(ServiceFactory,this.Mapper));
             await DisplayAlert("Login", "Succefully", "Ok");
         }
         catch (Exception ex)

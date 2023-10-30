@@ -1,8 +1,8 @@
-﻿using Microsoft.AspNetCore.Components.WebView.Maui;
-using MauiBlazor.Data;
-using MiddlewareMaui.Contacts;
+﻿using MiddlewareMaui.Contacts;
 using RepositorioMaui;
 using ServicioMaui;
+using AutoMapper;
+using MiddlewareMaui.Automap;
 
 namespace MauiBlazor;
 
@@ -22,9 +22,10 @@ public static class MauiProgram
 		#if DEBUG
 		builder.Services.AddBlazorWebViewDeveloperTools();
 #endif
-		
-		builder.Services.AddSingleton<WeatherForecastService>();
-		
+
+
+		var mapperconfig = new MapperConfiguration(mc => mc.AddProfile<DtoToDto>()).CreateMapper();
+		builder.Services.AddSingleton(mapperconfig);
 		builder.Services.AddTransient<IUnitOfWork, UnitOfWork>();
 		builder.Services.AddTransient<IServiceFactory, ServiceFactory>();
 

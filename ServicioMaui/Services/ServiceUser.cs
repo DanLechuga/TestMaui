@@ -4,7 +4,7 @@ namespace ServicioMaui.Services
 {
     public class ServiceUser : BaseService, IServiceUser
     {
-        public ServiceUser(IServiceFactory serviceFactory, IUnitOfWork unitOfWork) : base(serviceFactory, unitOfWork)
+        public ServiceUser(IServiceFactory serviceFactory, IUnitOfWork unitOfWork, AutoMapper.IMapper mapper) : base(serviceFactory, unitOfWork)
         {
         }
 
